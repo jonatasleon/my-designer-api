@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jonatasleon/my-designer-api/issues"
   },
-  "homepage": "https://github.com/jonatasleon/my-designer-api#readme"
+  "homepage": "https://github.com/jonatasleon/my-designer-api#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }

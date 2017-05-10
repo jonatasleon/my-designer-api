@@ -30,6 +30,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.19.1",
+    "nodemon": "^1.11.0"
   }
 }

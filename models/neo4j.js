@@ -19,4 +19,4 @@ driver.onError = (err) => {
   debug('Driver error\n%O', err);
 };
 
-default export driver.session()
+export default driver.session()

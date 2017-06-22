@@ -10,7 +10,7 @@ const createStmt = `CREATE (${ label }:${ name } { name: { name }, colors: { col
 const getAllStmt = `MATCH (${ label }:${ name }) RETURN ${ label }`;
 const deleteAllStmt = `MATCH (${ label }:${ name }) DETACH DELETE ${ label }`;
 
-module.exports = {
+export default {
   create: cordStone => db.run(createStmt, cordStone)
       .then((result) => {
         db.close();

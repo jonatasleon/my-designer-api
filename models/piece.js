@@ -17,7 +17,7 @@ const getAllStmt = `MATCH r=(:${ name })-[:CONTAINS|CLOSES_WITH|USES*1..3]-()
 RETURN r`;
 const deleteAllStmt = `MATCH (${ label }:${ name }) DETACH DELETE ${ label }`;
 
-module.exports = {
+export default {
   create: piece => db.run( createStmt, piece)
       .then((result) => {
         db.close();

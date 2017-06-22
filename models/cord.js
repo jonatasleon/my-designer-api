@@ -10,7 +10,7 @@ const createStmt = `CREATE (${ label }:${ name } { material: { material }, maxPo
 const getAllStmt = `MATCH (${ label }:${ name }) RETURN ${ label }`;
 const deleteAllStmt = `MATCH (${ label }:${ name }) DETACH DELETE ${ label }`;
 
-module.exports = {
+export default {
   create: cord => db.run(createStmt, cord)
       .then((result) => {
         db.close();

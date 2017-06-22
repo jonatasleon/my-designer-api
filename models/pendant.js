@@ -10,7 +10,7 @@ const createStmt = `CREATE (${ label }:${ name } { description: { description },
 const getAllStmt = `MATCH (${ label }:${ name }) RETURN ${ label }`;
 const deleteAllStmt = `MATCH (${ label }:${ name }) DETACH DELETE ${ label }`;
 
-module.exports = {
+export default {
   create: pendant => db.run(createStmt, pendant)
       .then((result) => {
         db.close();

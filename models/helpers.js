@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   mapRecord: label => (record) => {
     const target = {
       id: record.toObject()[label].identity.toInt(),

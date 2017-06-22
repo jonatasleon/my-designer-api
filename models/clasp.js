@@ -10,7 +10,7 @@ const createStmt = `CREATE (${ label }:${ name } { alias: { alias }, color: { co
 const getAllStmt = `MATCH (${ label }:${ name }) RETURN ${ label }`;
 const deleteAllStmt = `MATCH (${ label }:${ name }) DETACH DELETE ${ label }`;
 
-module.exports = {
+export default {
   create: clasp => db.run(createStmt, clasp)
       .then((result) => {
         db.close();

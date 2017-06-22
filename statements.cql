@@ -8,7 +8,7 @@ CREATE (cordStone:CordStone { name: 'Agata', colors: ['#4D8A18', '#E6E6E6'] })
 // Cria um pingente com a cor #FFD700
 CREATE (pendant:Pendant { description: 'Pingente de ouro', color: '#FFD700' })
 // Cria um cordão feito de palha
-CREATE (cord:Cord { material: 'palha', maxPendantPositions: 3 })
+CREATE (cord:Cord { material: 'palha', maxPositions: 3 })
 // Cria uma peça final com os nós anteriormente  criados
 CREATE (piece:Piece { alias: 'Colar de ouro' }),
   (piece)-[:CONTAINS]->(position1:Position { positionNumber: 1 }),

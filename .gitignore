@@ -57,4 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
-0
+*.min.js
+*.min.css
+
+public/vendor

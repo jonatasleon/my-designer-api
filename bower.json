@@ -1,0 +1,25 @@
+{
+  "name": "my-designer",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jonatas Leon"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonatasleon/my-designer-api"
+  },
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,5 +1,5 @@
 import { v1: neo4j } from 'neo4j-driver'
-import { debug: _debug } = from 'debug'
+import { debug: _debug } from 'debug'
 
 debug = _debug('my-designer:model');
 
